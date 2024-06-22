@@ -11,113 +11,17 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Serif:wght@500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 
+  <link href="style.css" rel="stylesheet">
 
-  <style>
-    .navbar-header {
-      /* Boja pozadine headera */
-      background-color: #BBDEFB;
-    }
-
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    .navbar-brand img {
-      width: 60px;
-      height: auto;
-      /* Razmak između slike i teksta */
-      margin-right: 10px;
-    }
-
-    .navbar-header .navbar-nav .nav-link {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      /* Odmak od desnog ruba */
-      margin-right: 20px;
-    }
-
-    .navbar-navigation {
-      /* Boja pozadine navigacije */
-      background-color: #06004B;
-    }
-
-    .navbar-navigation .nav-link {
-      font-family: 'Roboto Serif', serif;
-      font-weight: 500;
-      color: #FFFFFF;
-      margin-right: 20px;
-    }
-
-    .navbar-navigation .nav-link.active {
-      color: #FFFFFF;
-      background-color: #08005A;
-    }
-
-    .navbar-navigation .dropdown-menu {
-      background-color: #08005A;
-      color: #FFFFFF;
-    }
-
-    .navbar-navigation .dropdown-item {
-      font-family: 'Roboto Serif', serif;
-      font-weight: 500;
-      color: #aca4ff;
-    }
-
-    .navbar-navigation .dropdown-item:hover {
-      background-color: #08005A;
-      color: #FFFFFF;
-    }
-
-    .navbar-navigation .nav-link:hover,
-    .navbar-navigation .dropdown:hover .nav-link {
-      color: #FFFFFF;
-    }
-
-    .navbar-navigation .dropdown-toggle:hover .nav-link {
-      color: #FFFFFF;
-    }
-
-    .section {
-      padding-top: 5%;
-      background-color: #00437A;
-      color: #FFFFFF;
-      text-align: center;
-      padding-bottom: 3%;
-    }
-
-    .section h1 {
-      font-size: 26px;
-      font-family: 'Libre Baskerville', sans-serif;
-      font-weight: 500;
-      margin-bottom: 20px;
-    }
-
-    .section p {
-      text-align: justify;
-      padding: 3% 15%;
-      font-weight: normal;
-      font-family: 'Montserrat', serif;
-    }
-    
-    .image-section {
-      background: url('images/preddiplomski-hero-sekcija.jpg') no-repeat center center;
-      background-size: cover;
-      height: 400px;
-    }
-
-  </style>
 </head>
 
 <body>
@@ -126,8 +30,7 @@
   <nav class="navbar navbar-expand-lg navbar-header">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="images/tvz-logo.png" alt="Logo"
-          class="d-inline-block align-text-top">
+        <img src="images/tvz-logo.png" alt="Logo" class="d-inline-block align-text-top">
         Tehničko veleučilište Zagreb
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -179,11 +82,99 @@
   </nav>
 
   <!-- Stručni preddiplomski studiji sekcija -->
-  <section class="section">
+  <section class="sekcija-uvod">
     <h1>STRUČNI PREDDIPLOMSKI STUDIJI</h1>
-    <p>Tehničko veleučilište u Zagrebu nudi raznolike preddiplomske studije osmišljene kako bi studentima pružili temeljna znanja i vještine potrebne za uspješan početak karijere u tehnološkim i inženjerskim disciplinama. Naši preddiplomski programi prilagođeni su suvremenim trendovima i zahtjevima tržišta rada, omogućujući studentima da steknu relevantna i praktična znanja.</p>
+    <p>Tehničko veleučilište u Zagrebu nudi raznolike preddiplomske studije osmišljene kako bi studentima pružili
+      temeljna znanja i vještine potrebne za uspješan početak karijere u tehnološkim i inženjerskim disciplinama. Naši
+      preddiplomski programi prilagođeni su suvremenim trendovima i zahtjevima tržišta rada, omogućujući studentima da
+      steknu relevantna i praktična znanja.</p>
     <div class="image-section"></div>
   </section>
+
+  <!-- Kartice studija -->
+  <div class="sekcija-programi">
+    <div class="container">
+      <h2>NAŠI PROGRAMI</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/studij1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stručni studij Računarstva</h5>
+              <p class="card-text">Fokusiran na tehničke aspekte računarstva, uključujući operacijske sustave, računalne
+                mreže i sigurnost. Studenti će proučavati različite operacijske sustave poput Windowsa, Linuxa i
+                macOS-a.</p>
+              <a href="#" class="btn btn-saznaj-vise">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/studij2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stručni studij Informatike</h5>
+              <p class="card-text">Usmjeren na razvoj softverskih rješenja, programiranje, baze podataka, marketing,
+                dizajn i mrežne tehnologije. Studenti će steći znanja o različitim programskim jezicima, alatima i
+                tehnologijama.</p>
+              <a href="#" class="btn btn-saznaj-vise">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/studij3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stručni studij Elektrotehnike</h5>
+              <p class="card-text">Uključuje kolegije vezane uz električne strojeve, energetiku, automatizaciju i
+                elektroniku. Studenti uče kako dizajnirati i održavati električne sustave, te steknu vještine u
+                korištenju suvremene opreme.</p>
+              <a href="#" class="btn btn-saznaj-vise">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/studij4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stručni studij Mehatronike</h5>
+              <p class="card-text">Smjer koji kombinira strojarstvo, elektrotehniku i računarstvo. Studenti uče kako integrirati elektroničke i mehaničke komponente u složene sustave, kao što su roboti i automatizirani proizvodni sustavi.</p>
+              <a href="#" class="btn btn-saznaj-vise">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/studij5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stručni studij Strojarstva</h5>
+              <p class="card-text">Smjer strojarstva fokusira se na mehaničke sustave, konstrukciju i proizvodnju. Studenti proučavaju materijale, termodinamiku, mehaniku, te strojarske konstrukcije. Stječu vještine u korištenju suvremenih CAD alata.</p>
+              <a href="#" class="btn btn-saznaj-vise">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="images/studij6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Stručni studij Graditeljstva</h5>
+              <p class="card-text">Graditeljstvo obuhvaća dizajn, izgradnju i održavanje građevinskih objekata. Studenti uče o građevinskim materijalima, statici, dinamici, geotehnici, hidrotehnici. Program pokriva urbani razvoj i održivu gradnju.</p>
+              <a href="#" class="btn btn-saznaj-vise">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
 
   <!-- Bootstrap Javascript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
