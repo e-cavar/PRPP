@@ -1,0 +1,98 @@
+
+.navbar-header {
+    /* Boja pozadine headera */
+    background-color: #BBDEFB;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .navbar-brand img {
+    width: 60px;
+    height: auto;
+    /* Razmak između slike i teksta */
+    margin-right: 10px;
+  }
+
+  .navbar-header .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    /* Odmak od desnog ruba */
+    margin-right: 20px;
+  }
+
+  .navbar-navigation {
+    /* Boja pozadine navigacije */
+    background-color: #06004B;
+  }
+
+  .navbar-navigation .nav-link {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-right: 20px;
+  }
+
+  .navbar-navigation .nav-link.active {
+    color: #FFFFFF;
+    background-color: #08005A;
+  }
+
+  .navbar-navigation .dropdown-menu {
+    background-color: #08005A;
+    color: #FFFFFF;
+  }
+
+  .navbar-navigation .dropdown-item {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 500;
+    color: #aca4ff;
+  }
+
+  .navbar-navigation .dropdown-item:hover {
+    background-color: #08005A;
+    color: #FFFFFF;
+  }
+
+  .navbar-navigation .nav-link:hover,
+  .navbar-navigation .dropdown:hover .nav-link {
+    color: #FFFFFF;
+  }
+
+  .navbar-navigation .dropdown-toggle:hover .nav-link {
+    color: #FFFFFF;
+  }
+
+  .section {
+    padding-top: 5%;
+    background-color: #00437A;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+
+  .section h1 {
+    font-size: 26px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .section p {
+    text-align: justify;
+    padding: 3% 15%;
+    font-weight: normal;
+    font-family: 'Montserrat', serif;
+  }
+  
+  .image-section {
+    background: url('images/preddiplomski-hero-sekcija.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+  }
+
