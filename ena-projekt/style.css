@@ -168,3 +168,23 @@
     color: #FFFFFF;
   }
 
+  .footer-dio {
+    background-color: #0A142F;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .footer-dio h5 {
+    font-family: 'Libre Baskerville', sans-serif;
+    padding-bottom: 7px;
+  }
+
+  .text-body-secondary {
+    color: #fff!important;
+    font-size: 15px;
+  }
+
+  .logo-pozadina {
+    background-color: #fff;
+    border-radius: 10% 55%;
+  }
